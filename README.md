@@ -1,4 +1,4 @@
-Berikut ini adalah contoh README untuk proyek "web_klinik" dengan database MySQL dalam bahasa Indonesia:
+
 
 ```markdown
 # Web Klinik
