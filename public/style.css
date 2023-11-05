@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+    font-family: Poppins, sans-serif;
+}
+
+/* background */
+.bg-klinik{
+    display: flex;
+    opacity: 0.4;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: relative;
+}
+
+.desc{
+    color: #4942E4;
+    font-size: 50px;
+    position: absolute;
+    top: 10rem;
+    left: 5rem;
+}
+
+
+.location{
+    position: absolute;
+    top: 20rem;
+    gap: 5rem;
+    left: 5rem;
+}
+
+.button{
+    position: absolute;
+    top: 26rem;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 40px;
+    background-color: #008CBA;
+    color: #fff;
+    border-radius: 5px;
+    left: 10rem;
+}
+
+.button:hover{
+    scale: 0.9;
+    opacity: 0.8;
+}
+
+/* navbar */
+.navbar{
+    background-color: beige;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    margin: auto;
+    z-index: 9999;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    padding-right: 3rem;
+    align-items: center;
+    gap: 3rem;
+}
+
+.logo-klinik{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo{
+    object-fit:fill;
+    width: 2rem;
+    height: 1.6rem;
+}
+
+.nama-menu{
+    color: black;
+}
+
+.navbar-nav a:hover{
+    color: #4942E4;
+}
+
+.navbar-nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid;
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar-nav a:hover::after{
+    transform: scaleX(0.5);
+}
+
+/* layanan */
+.box{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.layanan{
+    display: flex;
+    width: 40%;
+    background-color: #C2DEDC;
+    height: 10rem;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 6px 3px 14px 0px rgba(0,0,0,0.61);
+    -webkit-box-shadow: 6px 3px 14px 0px rgba(0,0,0,0.61);
+    -moz-box-shadow: 6px 3px 14px 0px rgba(0,0,0,0.61);
+}
+
+
+.box-desk{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.desk-layanan{
+    font-size: smaller;
+}
+
+/* dokter kami */
+
+.desc-dokter{
+    display: flex;
+    background: #E3F4F4;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    flex-direction: column;
+
+}
+
+.card-list{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background: #E3F4F4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    border-radius: 10px;
+    /* outline: 2px solid; */
+    justify-content: center;
+    background: #fff;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    box-shadow: 6px 3px 14px 0px rgba(0,0,0,0.61);
+-webkit-box-shadow: 6px 3px 14px 0px rgba(0,0,0,0.61);
+-moz-box-shadow: 6px 3px 14px 0px rgba(0,0,0,0.61);
+}
+
+.card:hover{
+    opacity: 0.8;
+    scale: 0.9;
+}
+
+.dokter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* form pendaftaran */
+.ket-daftar{
+    padding-top: 7rem;
+}
+
+.ket-antrian{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view-antrian h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-daftar{
+    background-image: url(assets/6301.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+  .formDaftar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    padding: 20px;
+    margin-top: 20rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+
+  input[type="text"],
+  input[type="datetime-local"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  select {
+    height: 35px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  footer {
+    display: flex;
+    background-color: #F8F6F4;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+    align-items: start;
+    flex-direction: row;
+    width: 100vw;
+  }
+
+  footer h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer .foot-card{
+    padding: 2rem;
+    font-size: smaller;
+  }
+
+  footer iframe{
+    display: flex;
+    width: 20rem;
+    height: 15rem;
+    justify-content: center;
+  }
